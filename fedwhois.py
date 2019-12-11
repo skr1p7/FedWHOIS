@@ -1,4 +1,3 @@
-import urllib
 from bs4 import BeautifulSoup
 import urlparse4 as urlparse 
 import mechanize 
@@ -22,5 +21,5 @@ reader = reader.find("table", attrs={'id':'null'})
 reader = reader.find('table')
 
 print("Domains owned by "+query+" are> ")
-for text in soup.findAll('tr'):
+for text in reader.findAll('tr'):
     print(text.find('td').text)
