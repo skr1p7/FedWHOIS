@@ -1,0 +1,3 @@
+bs4==0.0.1
+mechanize==0.4.4
+urlparse4==0.1.3
